@@ -44,6 +44,11 @@ import { EventEditFormComponent } from './view/event-edit-form/event-edit-form.c
 import { ActivityEditPageComponent } from './view/activity-edit-page/activity-edit-page.component';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { ActivityEditFormComponent } from './view/activity-edit-form/activity-edit-form.component';
+import { PlannerAccEditComponent } from './view/planner-acc-edit/planner-acc-edit.component';
+import { PlannerAccEditCardComponent } from './view/planner-acc-edit-card/planner-acc-edit-card.component';
+import { PlannerEditSidebarComponent } from './view/planner-edit-sidebar/planner-edit-sidebar.component';
+import { PlannerProfEditSidebarComponent } from './view/planner-prof-edit-sidebar/planner-prof-edit-sidebar.component';
+import { PalnnerProfEditCardComponent } from './view/palnner-prof-edit-card/palnner-prof-edit-card.component';
 
 
 const routes: Routes = [
@@ -90,6 +95,14 @@ const routes: Routes = [
   {
     path: 'VendorProfileEdit',
     component: VendorProEditComponent
+  },
+  {
+    path: 'PlannerAccoutEdit',
+    component: PlannerAccEditComponent
+  },
+  {
+    path: 'PlannerProfileEdit',
+    component: PlannerProfEditSidebarComponent
   },
   {
     path: 'EventEditPage',
@@ -142,6 +155,11 @@ const routes: Routes = [
     EventEditFormComponent,
     ActivityEditPageComponent,
     ActivityEditFormComponent,
+    PlannerAccEditComponent,
+    PlannerAccEditCardComponent,
+    PlannerEditSidebarComponent,
+    PlannerProfEditSidebarComponent,
+    PalnnerProfEditCardComponent,
   ],
   imports: [
     BrowserModule,
