@@ -42,6 +42,9 @@
   width: 40%;
   height: 550px;
 }
+.Login-frm #card form{
+    margin-top: 20px;
+}
 .Login-frm #card form .form-group{
     margin-bottom: 5px;
 }
@@ -57,7 +60,7 @@
     background-color: rgba(148, 158, 167, 0.664) ;
 }
 .Login-frm #card form button{
-    right: 10px;
+    right: 20px;
     position: absolute;
     background-color: indigo;
     border-radius: 10px;
