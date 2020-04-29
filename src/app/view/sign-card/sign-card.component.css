@@ -60,13 +60,17 @@
     background-color: rgba(148, 158, 167, 0.664) ;
 }
 .Login-frm #card form button{
-    right: 20px;
+    /* right: 20px; */
     position: absolute;
     background-color: indigo;
-    border-radius: 10px;
+    color: aliceblue;
+    border-radius: 5px;
+    padding-left: 40%;
+    padding-right: 45%;
 }
 .Login-frm #card form button:hover{
     background-color: rebeccapurple;
+    color: darkseagreen;
 }
 .Login-frm #card form .form-check{
     margin-top:15px;
@@ -78,6 +82,7 @@
 .Login-frm #card form p{
     margin-bottom: 5px;
     margin-left: 5px;
+    margin-bottom: 20px;
     font-weight: bolder;
     color: rgb(19, 20, 20);
 }
