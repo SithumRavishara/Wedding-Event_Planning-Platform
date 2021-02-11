@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
+import java.util.List;
 
 @Repository
 public class UserDAOHibernateIml implements UserDAO{
@@ -47,5 +48,19 @@ public class UserDAOHibernateIml implements UserDAO{
         User theUser = currentSession.get(User.class,theId);
 
         return theUser;
+    }
+
+    @Override
+    public List<User> findByEmail(String email) {
+
+        Session currentSession = entityManager.unwrap(Session.class);
+
+        Query theQuery = currentSession.createQuery("select id, email, password, role from User where email=: email");
+
+        theQuery.setParameter("email",email);
+
+       List<User> user = theQuery.getResultList();
+
+        return user;
     }
 }

@@ -30,7 +30,7 @@ public class EventsDAOHibernateIml implements EventsDAO {
 
         Session currentSession = entityManager.unwrap(Session.class);
 
-        Query theQuery = currentSession.createQuery("delete from event where event_id=: eventId");
+        Query theQuery = currentSession.createQuery("delete from Events where event_id=: eventId");
 
         theQuery.setParameter("eventId", theId);
 

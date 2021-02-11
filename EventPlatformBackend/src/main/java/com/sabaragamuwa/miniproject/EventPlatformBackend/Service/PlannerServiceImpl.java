@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 public class PlannerServiceImpl implements PlannerService {
 
@@ -18,8 +20,8 @@ public class PlannerServiceImpl implements PlannerService {
 
     @Override
     @Transactional
-    public Planner findByName(String theName) {
-        return plannerDAO.findById(theName);
+    public List<Planner> findByName(String theName) {
+        return plannerDAO.findPlanners(theName);
     }
 
     @Override

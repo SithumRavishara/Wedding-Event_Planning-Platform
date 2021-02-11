@@ -27,6 +27,7 @@ public class EventRestController {
         return theEvents;
     }
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping("/events")
     public Events addEvent(@RequestBody Events theEvent){
 
@@ -37,8 +38,9 @@ public class EventRestController {
     }
 
 
-    @DeleteMapping("/events/{theId}")
-    public String deleteEvent(@PathVariable int theId){
+    @CrossOrigin(origins = "http://localhost:4200")
+    @DeleteMapping("/events")
+    public String deleteEvent(@RequestParam int theId) {
 
         Events theEvent = eventsService.findById(theId);
 

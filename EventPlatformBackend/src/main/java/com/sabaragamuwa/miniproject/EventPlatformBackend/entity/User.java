@@ -20,11 +20,11 @@ public class User {
     @Column(name = "role")
     private String role;
 
-    @OneToOne(mappedBy = "user_id",cascade = CascadeType.ALL)
-    private Planner planner;
-
-    @OneToOne(mappedBy = "user_id",cascade = CascadeType.ALL)
-    private Vendor vendor;
+//    @OneToOne(mappedBy = "user_id",cascade = CascadeType.ALL)
+//    private Planner planner;
+//
+//    @OneToOne(mappedBy = "user_id",cascade = CascadeType.ALL)
+//    private Vendor vendor;
 
     public User() {
     }
@@ -35,21 +35,21 @@ public class User {
         this.role = role;
     }
 
-    public Planner getPlanner() {
-        return planner;
-    }
-
-    public void setPlanner(Planner planner) {
-        this.planner = planner;
-    }
-
-    public Vendor getVendor() {
-        return vendor;
-    }
-
-    public void setVendor(Vendor vendor) {
-        this.vendor = vendor;
-    }
+//    public Planner getPlanner() {
+//        return planner;
+//    }
+//
+//    public void setPlanner(Planner planner) {
+//        this.planner = planner;
+//    }
+//
+//    public Vendor getVendor() {
+//        return vendor;
+//    }
+//
+//    public void setVendor(Vendor vendor) {
+//        this.vendor = vendor;
+//    }
 
     public int getId() {
         return id;
